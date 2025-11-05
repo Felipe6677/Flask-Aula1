@@ -5,8 +5,11 @@ app = flask(__name__)
 @app.route('/')
 
 def index():
-    return "olá, mundo !"
-if name == '__main__':
-    app.run(debug=True)
-    
-    
+   print("hello")
+   return "hello, word"
+
+app.route('/info')
+def info():
+   modulo = "flask"
+   aula = "1"
+   return f"<h1>modulo: {modulo}, aula: {aula} </h1>"
